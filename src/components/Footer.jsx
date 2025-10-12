@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Heart, Github, Linkedin, Mail, ArrowUp, FileText } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -19,6 +19,7 @@ const Footer = () => {
       { name: 'GitHub', href: 'https://github.com', icon: Github },
       { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
       { name: 'Email', href: 'mailto:woodsco@umich.edu', icon: Mail },
+      { name: 'Resume', href: '/Connor_Woods_Michigan_Resume.docx.pdf', icon: FileText },
     ]
   };
 
