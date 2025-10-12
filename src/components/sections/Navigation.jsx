@@ -20,6 +20,15 @@ const Navigation = () => {
       
       // Update active section based on scroll position
       const sections = navLinks.map(link => link.href.substring(1));
+      
+      // Check if we're at the bottom of the page (for contact section)
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
+      
+      if (isAtBottom) {
+        setActiveSection('contact');
+        return;
+      }
+      
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {

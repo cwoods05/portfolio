@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Mail, Twitter, ArrowUp } from 'lucide-react';
+import { Heart, Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 import Button from './ui/Button';
 
 const Footer = () => {
@@ -21,8 +21,7 @@ const Footer = () => {
     social: [
       { name: 'GitHub', href: 'https://github.com', icon: Github },
       { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-      { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
-      { name: 'Email', href: 'mailto:your.email@example.com', icon: Mail },
+      { name: 'Email', href: 'mailto:woodsco@umich.edu', icon: Mail },
     ]
   };
 
@@ -75,8 +74,8 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={social.name === 'Email' ? undefined : '_blank'}
+                  rel={social.name === 'Email' ? undefined : 'noopener noreferrer'}
                   className="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-primary-400 border border-slate-700 hover:border-primary-500/50 transition-all"
                   aria-label={social.name}
                 >
