@@ -16,15 +16,15 @@ const Footer = () => {
       { name: 'Projects', href: '#projects' },
     ],
     social: [
-      { name: 'GitHub', href: 'https://github.com', icon: Github },
-      { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
+      { name: 'GitHub', href: 'https://github.com/cwoods05', icon: Github },
+      { name: 'LinkedIn', href: 'https://www.linkedin.com/in/connor-woods-michigan/', icon: Linkedin },
       { name: 'Email', href: 'mailto:woodsco@umich.edu', icon: Mail },
       { name: 'Resume', href: '/Connor_Woods_Michigan_Resume.docx.pdf', icon: FileText },
     ]
   };
 
   return (
-    <footer id="contact" className="relative bg-slate-900 border-t border-slate-800">
+    <footer className="relative bg-slate-900 border-t border-slate-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

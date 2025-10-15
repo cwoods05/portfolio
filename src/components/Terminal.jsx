@@ -49,9 +49,9 @@ Check the experience section for detailed information!`
   contact: {
     description: 'Contact information',
     output: `Contact Me:
-Email: your.email@example.com
-GitHub: github.com/yourusername
-LinkedIn: linkedin.com/in/yourusername
+Email: woodsco@umich.edu
+GitHub: github.com/cwoods05
+LinkedIn: linkedin.com/in/connor-woods-michigan/
 
 Feel free to reach out!`
   },

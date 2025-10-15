@@ -4,6 +4,7 @@ import Hero from '../sections/Hero';
 import AboutSection from '../sections/AboutSection';
 import ExperienceSection from '../sections/ExperienceSection';
 import ProjectsSection from '../sections/ProjectsSection';
+import ContactSection from '../sections/ContactSection';
 import Footer from '../Footer';
 import Terminal from '../Terminal';
 
@@ -57,9 +58,12 @@ const Portfolio = () => {
 
         {/* Projects Section */}
         <ProjectsSection />
+
+        {/* Contact Section */}
+        <ContactSection />
       </main>
 
-      {/* Footer with Contact */}
+      {/* Footer */}
       <Footer />
 
       {/* Interactive Terminal */}
