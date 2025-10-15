@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Github, ChevronRight } from 'lucide-react';
+import { ExternalLink, Github, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { clsx } from 'clsx';
 import SectionHeader from '../ui/SectionHeader';
 import TechBadge from '../ui/TechBadge';
@@ -9,6 +9,7 @@ import { projects, projectCategories } from '../../data/projects';
 
 const ProjectCard = ({ project }) => {
   const [imageError, setImageError] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="group bg-slate-800/30 backdrop-blur-sm rounded-xl border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300 overflow-hidden h-full flex flex-col">
@@ -65,9 +66,62 @@ const ProjectCard = ({ project }) => {
         </h3>
 
         {/* Description */}
-        <p className="text-slate-400 text-sm mb-4 line-clamp-3 flex-1">
+        <p className={clsx(
+          "text-slate-400 text-sm mb-4",
+          !isExpanded && "line-clamp-3 flex-1"
+        )}>
           {project.description}
         </p>
+
+        {/* Expandable Section */}
+        {isExpanded && (project.longDescription || project.highlights) && (
+          <div className="mb-4 space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
+            {/* Long Description */}
+            {project.longDescription && (
+              <div>
+                <h4 className="text-sm font-semibold text-white mb-2">Details</h4>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  {project.longDescription}
+                </p>
+              </div>
+            )}
+
+            {/* Highlights */}
+            {project.highlights && project.highlights.length > 0 && (
+              <div>
+                <h4 className="text-sm font-semibold text-white mb-2">Key Highlights</h4>
+                <ul className="space-y-1.5">
+                  {project.highlights.map((highlight, index) => (
+                    <li key={index} className="text-slate-400 text-sm flex items-start gap-2">
+                      <span className="text-primary-400 mt-1">•</span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Show More/Less Button */}
+        {(project.longDescription || project.highlights) && (
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="flex items-center gap-1 text-sm text-primary-400 hover:text-primary-300 transition-colors mb-4 font-medium"
+          >
+            {isExpanded ? (
+              <>
+                <ChevronUp className="w-4 h-4" />
+                Show Less
+              </>
+            ) : (
+              <>
+                <ChevronDown className="w-4 h-4" />
+                Show More
+              </>
+            )}
+          </button>
+        )}
 
         {/* Technologies */}
         <div className="flex flex-wrap gap-2 mb-4">
