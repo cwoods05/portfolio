@@ -16,33 +16,71 @@ const commands = {
   },
   about: {
     description: 'About me',
-    output: `Hi! I'm a Full Stack Developer passionate about building amazing web applications.
-I specialize in React, Node.js, and modern web technologies.
+    output: `Hi, I'm Connor, a Computer Engineering Student at the University of Michigan with interests in machine learning, web development, and embedded systems.
+
+This past summer, I conducted research in computational biology, integrating graph neural networks into GraphRNA — a PyTorch-based model for predicting RNA 3D structures — and optimizing training pipelines on high-performance GPU clusters.
+
+Outside of school, I enjoy playing soccer, cooking, and spending time with friends. I also love to travel, and am always looking for new adventures.
+
 Type 'skills' to see my technical expertise.`
   },
   skills: {
     description: 'Technical skills',
     output: `Technical Skills:
-Frontend: React, Vue.js, TypeScript, Tailwind CSS
-Backend: Node.js, Python, PostgreSQL, MongoDB
-Tools: Git, Docker, AWS, CI/CD`
+
+Web Development:
+  React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, 
+  Node.js, FastAPI
+
+ML & Research:
+  Python, PyTorch, NumPy, SciPy, Keras, TensorFlow, Matplotlib, 
+  CUDA, Pandas, Conda
+
+Embedded:
+  C/C++, STM32 Microcontrollers, STM32CubeIDE, CAN/I2C, PWM Control, 
+  Motor Control
+
+Soft Skills:
+  Leadership, Problem Solving, Communication, Team Collaboration, 
+  Adaptability, Time Management`
   },
   projects: {
     description: 'Featured projects',
     output: `Featured Projects:
-1. E-Commerce Platform - Full-stack solution with payment integration
-2. AI Task Manager - Smart task management with AI prioritization
-3. Analytics Dashboard - Real-time data visualization
-4. Social Media Tool - Automation and scheduling platform
+
+1. LSTM-Based Portfolio Optimization (2024)
+   A deep learning project using LSTM neural networks to forecast stock 
+   returns and simulate portfolio strategies using open financial 
+   datasets.
+   Tech: Python, PyTorch, NumPy, Pandas, Matplotlib, Jupyter Notebook
+   GitHub: github.com/cwoods05/Inspirit-LSTM-project
+
+2. Turbofan Engine RUL Prediction (2025)
+   Machine learning pipeline for predicting Remaining Useful Life of 
+   turbofan engines using NASA CMAPSS dataset.
+   Tech: Python, scikit-learn, NumPy, Pandas, Matplotlib
+   GitHub: github.com/cwoods05/turbofan-rul-starter
 
 Visit the projects section to learn more!`
   },
   experience: {
     description: 'Work experience',
     output: `Work Experience:
-• Senior Full Stack Developer @ Tech Innovations Inc. (2022 - Present)
-• Full Stack Developer @ Digital Solutions Co. (2020 - 2021)
-• Frontend Developer @ StartUp Labs (2019 - 2020)
+
+• Machine Learning Researcher @ St. Louis University (May 2025 - Present)
+  Conducting deep learning research on RNA 3D structure prediction using 
+  graph neural networks. Integrated code into GraphRNA and optimized 
+  training on high-performance GPU clusters.
+
+• Embedded Software Engineer @ Michigan Mars Rover Team (Aug 2025 - Present)
+  Developing embedded control software for autonomous rover systems. 
+  Programming STM32 microcontrollers for motor control and implementing 
+  CAN/I2C communication protocols.
+
+• Intern @ Arch Grants (April 2024 - May 2024)
+  Supported startup accelerator by evaluating early-stage companies and 
+  conducting market research. Analyzed 200+ potential judges and mapped 
+  30+ startups in the St. Louis ecosystem.
 
 Check the experience section for detailed information!`
   },
