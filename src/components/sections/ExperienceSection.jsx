@@ -126,7 +126,6 @@ const ExperienceSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Work Experience"
-          subtitle="My professional journey and the companies I've had the privilege to work with"
         />
 
         <div className="max-w-4xl mx-auto">

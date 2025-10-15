@@ -33,28 +33,23 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="About Me"
-          subtitle="Passionate developer dedicated to crafting exceptional digital experiences"
         />
 
         {/* About Content */}
         <div className="max-w-4xl mx-auto mb-20">
           <div className="prose prose-lg prose-invert mx-auto">
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              I&apos;m a <span className="text-gradient font-semibold">Full Stack Developer</span> with
-              a passion for creating elegant solutions to complex problems. With over 5 years of experience
-              in web development, I&apos;ve had the opportunity to work on diverse projects ranging from
-              startups to enterprise applications.
+              Hi, I&apos;m Connor, a <span className="text-gradient font-semibold">Computer Engineering Student</span> at 
+              the University of Michigan with interests in machine learning, web development, and embedded systems.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              My journey in tech started with a curiosity about how things work on the web. This curiosity
-              evolved into a deep passion for building applications that not only function flawlessly but
-              also provide delightful user experiences. I believe in writing clean, maintainable code and
-              staying up-to-date with the latest technologies and best practices.
+              This past summer, I conducted research in computational biology, integrating graph neural networks 
+              into GraphRNA — a PyTorch-based model for predicting RNA 3D structures — and optimizing training 
+              pipelines on high-performance GPU clusters.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              When I&apos;m not coding, you can find me contributing to open-source projects, writing
-              technical blog posts, or mentoring aspiring developers. I&apos;m always excited to collaborate
-              on interesting projects and connect with fellow developers.
+              Outside of school, I enjoy playing soccer, cooking, and spending time with friends. I also love to travel,
+              and am always looking for new adventures.
             </p>
           </div>
         </div>

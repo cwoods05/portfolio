@@ -1,79 +1,67 @@
 export const experiences = [
   {
     id: 1,
-    company: "Tech Innovations Inc.",
-    position: "Senior Full Stack Developer",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    startDate: "Jan 2022",
+    company: "St. Louis University Dept. of Computer Science - Jie Hou Lab",
+    position: "Machine Learning Researcher",
+    location: "St. Louis, MO",
+    type: "Internship",
+    startDate: "May 2025",
     endDate: "Present",
     current: true,
-    description: "Leading development of enterprise-scale web applications and mentoring junior developers.",
+    description: "Conducting deep learning research on RNA 3D structure prediction using graph neural networks.",
     responsibilities: [
-      "Architected and developed microservices-based applications serving 1M+ users",
-      "Led team of 5 developers in building customer-facing React applications",
-      "Reduced API response time by 70% through optimization and caching strategies",
-      "Implemented CI/CD pipelines reducing deployment time from hours to minutes",
-      "Mentored 10+ junior developers through code reviews and pair programming"
+      "Integrated code into GraphRNA, a PyTorch-based GNN designed for predicting RNA 3D structures.",
+      "Migrated model pipeline to handle full-sequence templates using stem/hairpin motif inputs.",
+      "Extended dataset loader to align PDB and template data with consistent residue and atom indexing.",
+      "Fused structure embeddings for training and testing on high-performance GPU clusters.",
+      "Activated CUDA-compatible environments on Jetstream HPC nodes for distributed training."
     ],
-    technologies: ["React", "Node.js", "TypeScript", "PostgreSQL", "AWS", "Docker", "Kubernetes"],
-    achievements: [
-      "Promoted to Senior Developer within 18 months",
-      "Received 'Innovation Award' for implementing new architecture",
-      "Reduced production bugs by 60% through testing improvements"
-    ],
-    logo: "/companies/tech-innovations.svg"
+    technologies: ["Python", "PyTorch", "CUDA", "WandB", "NumPy", "Pandas", "Conda"],
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Saint_Louis_University_logo.svg/512px-Saint_Louis_University_logo.svg.png"
   },
   {
     id: 2,
-    company: "Digital Solutions Co.",
-    position: "Full Stack Developer",
-    location: "Remote",
-    type: "Full-time",
-    startDate: "Jun 2020",
-    endDate: "Dec 2021",
-    current: false,
-    description: "Developed and maintained multiple client projects using modern web technologies.",
+    company: "Michigan Mars Rover Team",
+    position: "Embedded Software Engineer",
+    location: "Ann Arbor, MI",
+    type: "Project Team",
+    startDate: "Aug 2025",
+    endDate: "present",
+    current: true,
+    description: "Developing and testing embedded control software for autonomous rover systems.",
     responsibilities: [
-      "Built responsive web applications for clients across various industries",
-      "Collaborated with designers to implement pixel-perfect UI components",
-      "Integrated third-party APIs and payment gateways (Stripe, PayPal)",
-      "Optimized application performance achieving 95+ Lighthouse scores",
-      "Participated in Agile ceremonies and sprint planning"
+      "Programmed STM32 microcontrollers in C/C++ to generate PWM signals for motor control.",
+      "Implemented and debugged CAN and I²C communication protocols for subsystem integration.",
+      "Worked on embedded firmware design using STM32CubeIDE to improve diagnostics and power efficiency.",
+      "Currently calibrating and tuning the rover’s brushed and brushless motors to improve performance and control precision."
     ],
-    technologies: ["Vue.js", "Python", "Django", "MySQL", "Redis", "Docker"],
-    achievements: [
-      "Delivered 15+ projects on time and under budget",
-      "Improved client satisfaction score by 25%",
-      "Reduced server costs by 40% through optimization"
-    ],
-    logo: "/companies/digital-solutions.svg"
+    technologies: ["C",
+      "C++",
+      "STM32CubeIDE",
+      "CAN",
+      "I2C",
+      "PWM"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Michigan_Wolverines_logo.svg"
   },
   {
     id: 3,
-    company: "StartUp Labs",
-    position: "Frontend Developer",
-    location: "New York, NY",
-    type: "Full-time",
-    startDate: "Mar 2019",
-    endDate: "May 2020",
+    company: "Arch Grants",
+    position: "Intern",
+    location: "St. Louis, MO",
+    type: "Internship",
+    startDate: "April 2024",
+    endDate: "May 2024",
     current: false,
-    description: "Focused on building responsive and accessible user interfaces for SaaS products.",
+    description: "Supported the Arch Grants startup accelerator by evaluating early-stage companies and conducting market research.",
     responsibilities: [
-      "Developed reusable React components following atomic design principles",
-      "Implemented responsive designs ensuring cross-browser compatibility",
-      "Worked closely with UX team to improve user experience metrics",
-      "Conducted code reviews and established frontend best practices",
-      "Set up automated testing with Jest and React Testing Library"
+      "Conducted research on emerging startups in geospatial and manufacturing sectors.",
+      "Performed background analysis on 200+ potential judges to ensure credibility.",
+      "Mapped 30+ additional startups and accelerators in a St. Louis startup ecosystem.",
     ],
-    technologies: ["React", "JavaScript", "SASS", "Webpack", "Jest"],
-    achievements: [
-      "Improved page load time by 50%",
-      "Increased user engagement by 30%",
-      "Established component library used across products"
-    ],
-    logo: "/companies/startup-labs.svg"
-  },
+    technologies: ["Excel",
+      "PitchBook"],
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Arch_Grants_logo.png/512px-Arch_Grants_logo.png"
+  }/*,
   {
     id: 4,
     company: "Freelance",
@@ -98,7 +86,7 @@ export const experiences = [
       "Generated $50K+ in revenue"
     ],
     logo: "/companies/freelance.svg"
-  }
+  }*/
 ];
 
 export const organizations = [
