@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Mail, ArrowUp, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp, FileText } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -36,12 +36,6 @@ const Footer = () => {
             <p className="text-slate-400 mb-4">
               Building exceptional digital experiences with passion and precision.
             </p>
-            <div className="flex items-center gap-2 text-sm text-slate-500">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>and lots of</span>
-              <span>☕</span>
-            </div>
           </div>
 
           {/* Quick Links */}

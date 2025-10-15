@@ -26,86 +26,86 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Greeting */}
-          <div className="mb-6 animate-fade-in">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700/50 text-slate-300 text-sm">
-              <Terminal className="w-4 h-4 text-primary-400" />
-              Welcome to my portfolio
-            </span>
-          </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Left Column - Existing Content */}
+            <div className="text-center lg:text-left">
+              {/* Greeting */}
+              <div className="mb-6 animate-fade-in">
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700/50 text-slate-300 text-sm">
+                  <Terminal className="w-4 h-4 text-primary-400" />
+                  Welcome to my portfolio
+                </span>
+              </div>
 
-          {/* Main heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up">
-            Hi, I&apos;m{' '}
-            <span className="text-gradient">Connor Woods</span>
-          </h1>
+              {/* Main heading */}
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up">
+                <span className="text-gradient">Connor Woods</span>
+              </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-slate-300 mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            Full Stack Developer & Creative Problem Solver
-          </p>
+              {/* Subtitle */}
+              <p className="text-xl sm:text-2xl md:text-3xl text-slate-300 mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+                Computer Engineering<br />
+                University of Michigan '28
+              </p>
 
-          {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            I craft exceptional digital experiences by combining elegant design with powerful code.
-            Specializing in building scalable web applications that make a difference.
-          </p>
+                {/* Description */}
+                <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+                  AI/ML • Embedded Systems • Full-Stack Development
+                </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <Button 
-              size="lg" 
-              icon={ArrowRight} 
-              iconPosition="right"
-              onClick={() => scrollToSection('projects')}
-            >
-              View My Work
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get In Touch
-            </Button>
-          </div>
 
-          {/* Social Links */}
-          <div className="flex items-center justify-center gap-6 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <a
-              href="https://github.com/cwoods05"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
-            >
-              <Github className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/connor-woods-michigan/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
-            >
-              <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
-            </a>
-            <a
-              href="mailto:woodsco@umich.edu"
-              className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
-            >
-              <Mail className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
-            </a>
-            <a
-              href="/Connor_Woods_Michigan_Resume.docx.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
-            >
-              <FileText className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
-            </a>
+              {/* Social Links */}
+              <div className="flex items-center justify-center lg:justify-start gap-6 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+                <a
+                  href="https://github.com/cwoods05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
+                >
+                  <Github className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/connor-woods-michigan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
+                >
+                  <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
+                </a>
+                <a
+                  href="mailto:woodsco@umich.edu"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
+                >
+                  <Mail className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
+                </a>
+                <a
+                  href="/Connor_Woods_Michigan_Resume.docx.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-slate-800/50 hover:bg-slate-700 border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
+                >
+                  <FileText className="w-5 h-5 text-slate-400 group-hover:text-primary-400 transition-colors" />
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column - Profile Photo */}
+            <div className="flex justify-center lg:justify-end animate-slide-up" style={{ animationDelay: '0.5s' }}>
+              <div className="relative">
+                <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full border-4 border-primary-500 overflow-hidden bg-slate-200 dark:bg-slate-800">
+                  <img 
+                    src="/norway2.jpg" 
+                    alt="Connor Woods" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-
       </div>
     </section>
   );
