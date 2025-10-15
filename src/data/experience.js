@@ -102,30 +102,29 @@ export const experiences = [
 ];
 
 export const organizations = [
-  { name: "Google", logo: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" },
-  { name: "Microsoft", logo: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b" },
-  { name: "Amazon", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
-  { name: "Meta", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" },
-  { name: "Apple", logo: "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" },
-  { name: "Netflix", logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" },
+  { name: "MATLAB", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Matlab_icon.png" },
+  { name: "VS Code", logo: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" },
+  { name: "Linux", logo: "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" },
+  { name: "Ubuntu", logo: "https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" },
+  { name: "Jupyter", logo: "https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" },
+  { name: "Figma", logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" },
+  { name: "Git", logo: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
+  { name: "LTSpice", logo: "/LLTC.defunct.2017.png" },
 ];
 
 export const skills = {
-  frontend: [
-    "React", "Vue.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3",
-    "Tailwind CSS", "SASS", "Redux", "React Query", "Webpack", "Vite"
+  web: [
+    "React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3",
+    "Tailwind CSS", "Node.js", "FastAPI"
   ],
-  backend: [
-    "Node.js", "Express", "Python", "Django", "FastAPI", "PostgreSQL",
-    "MongoDB", "Redis", "GraphQL", "REST APIs", "WebSockets"
+  ml: [
+    "Python", "PyTorch", "NumPy", "SciPy", "Keras", "TensorFlow", "Matplotlib","CUDA", "Pandas", "Conda"
   ],
-  tools: [
-    "Git", "Docker", "Kubernetes", "AWS", "CI/CD", "Jest", "Cypress",
-    "Figma", "Postman", "Linux", "Nginx"
+  embedded: [
+    "C/C++", "STM32 Microcontrollers", "STM32CubeIDE", "CAN/I2C", "PWM Control", "Motor Control"
   ],
   soft: [
-    "Leadership", "Mentoring", "Agile/Scrum", "Problem Solving",
-    "Communication", "Team Collaboration", "Project Management"
+    "Leadership", "Problem Solving", "Communication", "Team Collaboration", "Adaptability", "Time Management"
   ]
 };
 

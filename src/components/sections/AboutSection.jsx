@@ -6,19 +6,19 @@ import { skills, organizations } from '../../data/experience';
 
 const features = [
   {
-    icon: Code2,
-    title: 'Clean Code',
-    description: 'Writing maintainable, scalable, and well-documented code following best practices.'
-  },
-  {
     icon: Palette,
-    title: 'UI/UX Design',
-    description: 'Creating intuitive and beautiful user interfaces that provide excellent user experience.'
+    title: 'Full-Stack Development',
+    description: 'Building robust web apps with focus on clean design and scalability.'
   },
   {
     icon: Rocket,
-    title: 'Performance',
-    description: 'Optimizing applications for speed, efficiency, and seamless user interactions.'
+    title: 'Machine Learning & Research',
+    description: 'Training and optimizingmodels on high-performance computing clusters for scientific research.'
+  },
+  {
+    icon: Code2,
+    title: 'Systems Thinking',
+    description: 'Designing efficient, and maintainable systems across software and hardware layers.'
   },
   {
     icon: Users,
@@ -86,13 +86,13 @@ const AboutSection = () => {
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Frontend */}
+            {/* Web Development */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
-                Frontend
+                Web Development
               </h4>
               <div className="flex flex-wrap gap-2">
-                {skills.frontend.map((skill) => (
+                {skills.web.map((skill) => (
                   <TechBadge key={skill} variant="primary">
                     {skill}
                   </TechBadge>
@@ -100,13 +100,13 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Backend */}
+            {/* ML/AI */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
-                Backend
+                ML & Research
               </h4>
               <div className="flex flex-wrap gap-2">
-                {skills.backend.map((skill) => (
+                {skills.ml.map((skill) => (
                   <TechBadge key={skill} variant="accent">
                     {skill}
                   </TechBadge>
@@ -114,13 +114,13 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Tools */}
+            {/* Embedded */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
-                Tools & DevOps
+                Embedded
               </h4>
               <div className="flex flex-wrap gap-2">
-                {skills.tools.map((skill) => (
+                {skills.embedded.map((skill) => (
                   <TechBadge key={skill} variant="success">
                     {skill}
                   </TechBadge>
@@ -128,7 +128,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Soft Skills */}
+            {/* Soft */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
                 Soft Skills
