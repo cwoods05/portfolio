@@ -13,7 +13,7 @@ const features = [
   {
     icon: Rocket,
     title: 'Machine Learning & Research',
-    description: 'Training and optimizingmodels on high-performance computing clusters for scientific research.'
+    description: 'Training and optimizing models on high-performance computing clusters for scientific research.'
   },
   {
     icon: Code2,

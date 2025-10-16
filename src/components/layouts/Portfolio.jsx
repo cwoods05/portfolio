@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Navigation from '../sections/Navigation';
 import Hero from '../sections/Hero';
 import AboutSection from '../sections/AboutSection';
+import CourseworkSection from '../sections/CourseworkSection';
 import ExperienceSection from '../sections/ExperienceSection';
 import ProjectsSection from '../sections/ProjectsSection';
 import ContactSection from '../sections/ContactSection';
@@ -52,6 +53,9 @@ const Portfolio = () => {
 
         {/* About Section */}
         <AboutSection />
+
+        {/* Coursework Section */}
+        <CourseworkSection />
 
         {/* Experience Section */}
         <ExperienceSection />

@@ -19,7 +19,7 @@ const Footer = () => {
       { name: 'GitHub', href: 'https://github.com/cwoods05', icon: Github },
       { name: 'LinkedIn', href: 'https://www.linkedin.com/in/connor-woods-michigan/', icon: Linkedin },
       { name: 'Email', href: 'mailto:woodsco@umich.edu', icon: Mail },
-      { name: 'Resume', href: '/Connor_Woods_Michigan_Resume.docx.pdf', icon: FileText },
+      { name: 'Resume', href: '/Connor_Woods_Resume.pdf', icon: FileText },
     ]
   };
 

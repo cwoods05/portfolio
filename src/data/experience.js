@@ -32,7 +32,6 @@ export const experiences = [
     responsibilities: [
       "Programmed STM32 microcontrollers in C/C++ to generate PWM signals for motor control.",
       "Implemented and debugged CAN and I²C communication protocols for subsystem integration.",
-      "Worked on embedded firmware design using STM32CubeIDE to improve diagnostics and power efficiency.",
       "Currently calibrating and tuning the rover’s brushed and brushless motors to improve performance and control precision."
     ],
     technologies: ["C",
