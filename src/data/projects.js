@@ -9,7 +9,7 @@ export const projects = [
     status: "Live",
     featured: false,
     image: "lstm-proj.png",
-    demoUrl: "https://demo.example.com",
+    demoUrl: null,
     githubUrl: "https://github.com/cwoods05/Inspirit-LSTM-project",
     highlights: [
       "Replicated academic LSTM portfolio research with open datasets",
@@ -19,7 +19,7 @@ export const projects = [
       "Feature analysis revealed Fama-French factors as most influential",
       "Training pipeline with robust preprocessing and GPU support"
     ],
-    year: 2024
+    year: '2023/24'
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const projects = [
     status: "Live",
     featured: true,
     image: "turbofan.jpg",
-    demoUrl: "https://demo.example.com",
+    demoUrl: null,
     githubUrl: "https://github.com/cwoods05/turbofan-rul-starter",
     highlights: [
       "Implements RUL prediction using NASA CMAPSS FD001 dataset",
@@ -42,6 +42,27 @@ export const projects = [
       "Visualizations and outputs for validation predictions and metrics"
     ],
     year: 2025
+  },
+  {
+    id: 3,
+    title: "ROOKI",
+    description: "A platform for hockey fans to share their thoughts in groups, comment on games, and make lock picks on game outcomes.",
+    longDescription: "ROOKI is a full stack web application designed for hockey fans to connect and engage with the sport. Users can join groups to share their thoughts, comment on live games, and make lock picks on game outcomes, creating a community-driven platform for hockey enthusiasts.",
+    technologies: ["JavaScript", "React", "Node.js"],
+    category: "Full Stack",
+    status: "Live",
+    featured: false,
+    image: "rooki-logo.PNG",
+    demoUrl: "https://rookiapp.com",
+    githubUrl: null,
+    highlights: [
+      "Group-based discussions for hockey fans",
+      "Live game commenting and engagement",
+      "Lock picks on game outcomes",
+      "Community-driven platform",
+      "Live deployment at rookiapp.com"
+    ],
+    year: '2025/26'
   }
 ];
 

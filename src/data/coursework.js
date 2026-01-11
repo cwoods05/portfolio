@@ -1,5 +1,23 @@
 export const coursework = [
   {
+    code: 'EECS 281',
+    name: 'Data Structures and Algorithms',
+    description: 'Algorithm analysis and O-notation, covering fundamental data structures, searching and sorting algorithms, recursive algorithms, and graph algorithms.',
+    topics: ['Data Structures', 'Algorithms', 'Complexity Analysis', 'Graph Algorithms']
+  },
+  {
+    code: 'EECS 270',
+    name: 'Introduction to Logic Design',
+    description: 'Digital logic design, Boolean algebra, combinational and sequential circuits, state machines, and FPGA implementation using CAD tools.',
+    topics: ['Digital Logic', 'FPGA', 'Boolean Algebra', 'State Machines']
+  },
+  {
+    code: 'EECS 370',
+    name: 'Introduction to Computer Organization',
+    description: 'Basic concepts of computer organization and hardware, covering the principles and structure of modern computer systems.',
+    topics: ['Computer Architecture', 'Hardware Design', 'System Organization', 'Embedded Systems']
+  },
+  {
     code: 'EECS 215',
     name: 'Circuits and Electronics',
     description: 'Analysis and design of linear circuits, operational amplifiers, and transistor circuits.',
