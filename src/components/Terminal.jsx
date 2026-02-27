@@ -16,7 +16,7 @@ const commands = {
   },
   about: {
     description: 'About me',
-    output: `Hi, I'm Connor, a Computer Engineering Student at the University of Michigan with interests in machine learning, web development, and embedded systems.
+    output: `Hi, I'm Connor, a Computer Engineering Student at the University of Michigan with interests in machine learning, embedded systems, and web development.
 
 This past summer, I conducted research in computational biology, integrating graph neural networks into GraphRNA — a PyTorch-based model for predicting RNA 3D structures — and optimizing training pipelines on high-performance GPU clusters.
 
@@ -28,10 +28,6 @@ Type 'skills' to see my technical expertise.`
     description: 'Technical skills',
     output: `Technical Skills:
 
-Web Development:
-  React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, 
-  Node.js, FastAPI
-
 ML & Research:
   Python, PyTorch, NumPy, SciPy, Keras, TensorFlow, Matplotlib, 
   CUDA, Pandas, Conda
@@ -39,6 +35,10 @@ ML & Research:
 Embedded:
   C/C++, STM32 Microcontrollers, STM32CubeIDE, CAN/I2C, PWM Control, 
   Motor Control
+
+Web Development:
+  React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, 
+  Node.js, FastAPI
 
 Soft Skills:
   Leadership, Problem Solving, Communication, Team Collaboration, 

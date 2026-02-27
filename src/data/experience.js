@@ -6,8 +6,8 @@ export const experiences = [
     location: "St. Louis, MO",
     type: "Internship",
     startDate: "May 2025",
-    endDate: "Present",
-    current: true,
+    endDate: "Oct 2025",
+    current: false,
     description: "Conducting deep learning research on RNA 3D structure prediction using graph neural networks.",
     responsibilities: [
       "Integrated code into GraphRNA, a PyTorch-based GNN designed for predicting RNA 3D structures.",
@@ -30,9 +30,9 @@ export const experiences = [
     current: true,
     description: "Developing and testing embedded control software for autonomous rover systems.",
     responsibilities: [
-      "Programmed STM32 microcontrollers in C/C++ to generate PWM signals for motor control.",
-      "Implemented and debugged CAN and I²C communication protocols for subsystem integration.",
-      "Currently calibrating and tuning the rover’s brushed and brushless motors to improve performance and control precision."
+      "Program STM32 microcontrollers in C/C++ to generate PWM signals for motor control.",
+      "Implement and debugged CAN and I²C communication protocols for subsystem integration.",
+      "Develop UART-based C++ wrapper around Dynamixel SDK to support direct motor control."
     ],
     technologies: ["C",
       "C++",

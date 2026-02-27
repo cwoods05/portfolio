@@ -6,11 +6,6 @@ import { skills, organizations } from '../../data/experience';
 
 const features = [
   {
-    icon: Palette,
-    title: 'Full-Stack Development',
-    description: 'Building robust web apps with focus on clean design and scalability.'
-  },
-  {
     icon: Rocket,
     title: 'Machine Learning & Research',
     description: 'Training and optimizing models on high-performance computing clusters for scientific research.'
@@ -19,6 +14,11 @@ const features = [
     icon: Code2,
     title: 'Systems Thinking',
     description: 'Designing efficient, and maintainable systems across software and hardware layers.'
+  },
+  {
+    icon: Palette,
+    title: 'Full-Stack Development',
+    description: 'Building robust web apps with focus on clean design and scalability.'
   },
   {
     icon: Users,
@@ -40,7 +40,7 @@ const AboutSection = () => {
           <div className="prose prose-lg prose-invert mx-auto">
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
               Hi, I&apos;m Connor, a <span className="text-gradient font-semibold">Computer Engineering Student</span> at 
-              the University of Michigan with interests in machine learning, web development, and embedded systems.
+              the University of Michigan with interests in machine learning, embedded systems, and web development.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
               This past summer, I conducted research in computational biology, integrating graph neural networks 
@@ -81,20 +81,6 @@ const AboutSection = () => {
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Web Development */}
-            <div>
-              <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
-                Web Development
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {skills.web.map((skill) => (
-                  <TechBadge key={skill} variant="primary">
-                    {skill}
-                  </TechBadge>
-                ))}
-              </div>
-            </div>
-
             {/* ML/AI */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
@@ -117,6 +103,20 @@ const AboutSection = () => {
               <div className="flex flex-wrap gap-2">
                 {skills.embedded.map((skill) => (
                   <TechBadge key={skill} variant="success">
+                    {skill}
+                  </TechBadge>
+                ))}
+              </div>
+            </div>
+
+            {/* Web Development */}
+            <div>
+              <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
+                Web Development
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {skills.web.map((skill) => (
+                  <TechBadge key={skill} variant="primary">
                     {skill}
                   </TechBadge>
                 ))}

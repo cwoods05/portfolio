@@ -6,16 +6,16 @@ export const coursework = [
     topics: ['Data Structures', 'Algorithms', 'Complexity Analysis', 'Graph Algorithms']
   },
   {
-    code: 'EECS 270',
-    name: 'Introduction to Logic Design',
-    description: 'Digital logic design, Boolean algebra, combinational and sequential circuits, state machines, and FPGA implementation using CAD tools.',
-    topics: ['Digital Logic', 'FPGA', 'Boolean Algebra', 'State Machines']
-  },
-  {
     code: 'EECS 370',
     name: 'Introduction to Computer Organization',
     description: 'Basic concepts of computer organization and hardware, covering the principles and structure of modern computer systems.',
     topics: ['Computer Architecture', 'Hardware Design', 'System Organization', 'Embedded Systems']
+  },
+  {
+    code: 'EECS 270',
+    name: 'Introduction to Logic Design',
+    description: 'Digital logic design, Boolean algebra, combinational and sequential circuits, state machines, and FPGA implementation using CAD tools.',
+    topics: ['Digital Logic', 'FPGA', 'Boolean Algebra', 'State Machines']
   },
   {
     code: 'EECS 215',
