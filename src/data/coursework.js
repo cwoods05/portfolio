@@ -1,5 +1,17 @@
 export const coursework = [
   {
+    code: 'EECS 373 - Upcoming',
+    name: 'Introduction to Embedded System Design',
+    description: 'Principles and practices of modern embedded systems. Covers the hardware/software interface, memory-mapped I/O, interrupts, serial buses, and techniques for sensing and controlling the physical world. Culminates in a major, open-ended hardware/software team project.',
+    topics: ['Embedded Systems','ARM Cortex M-3','FPGAs','Hardware/Software Interfacing']
+  },
+  {
+    code: 'EECS 482 - Upcoming',
+    name: 'Introduction to Operating Systems',
+    description: 'Design and implementation of modern operating systems. Covers processes and threads, concurrency and synchronization, CPU scheduling, virtual memory management, device drivers, and file systems. Intensive project work implementing core OS modules.',
+    topics: ['Operating Systems', 'Concurrency', 'Multithreading', 'Kernel Development']
+  },
+  {
     code: 'EECS 281',
     name: 'Data Structures and Algorithms',
     description: 'Algorithm analysis and O-notation, covering fundamental data structures, searching and sorting algorithms, recursive algorithms, and graph algorithms.',
