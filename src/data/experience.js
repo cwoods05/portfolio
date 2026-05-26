@@ -37,7 +37,7 @@ export const experiences = [
     company: "St. Louis University Dept. of Computer Science - Jie Hou Lab",
     position: "Machine Learning Researcher",
     location: "St. Louis, MO",
-    type: "Researh Internship",
+    type: "Research Internship",
     startDate: "May 2025",
     endDate: "Oct 2025",
     current: false,
