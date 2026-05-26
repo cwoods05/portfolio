@@ -1,10 +1,43 @@
 export const experiences = [
   {
     id: 1,
+    company: "Lantern AI",
+    position: "Embedded Firmware Engineer",
+    location: "Hong Kong SAR",
+    type: "Internship",
+    startDate: "May 2026",
+    endDate: "July 2026",
+    current: true,
+    description: "",
+    responsibilities: [
+      
+    ],
+    technologies: [],
+    logo: ""
+  },
+  {
+    id: 2,
+    company: "Atombot Research Team - Y Z Lab",
+    position: "Embedded Firmware Engineer",
+    location: "Ann Arbor, MI",
+    type: "Research Team",
+    startDate: "Jan 2026",
+    endDate: "Present",
+    current: true,
+    description: "Researching wheel-legged robotics and developing firmware for the Helium subteam.",
+    responsibilities: [
+      "Engineer interface functions to construct, transmit, and parse custom CAN frames for robotic motor control, including command messages, state queries, and fault-code retrieval",
+      "Bench-test and validate CAN communication with MIT ODrive motor controllers, debug message IDs, payload structure, and bus timing to reliably actuate brushless motors"
+    ],
+    technologies: ["C", "C++", "CAN", "ODrive"],
+    logo: ""
+  },
+  {
+    id: 3,
     company: "St. Louis University Dept. of Computer Science - Jie Hou Lab",
     position: "Machine Learning Researcher",
     location: "St. Louis, MO",
-    type: "Internship",
+    type: "Researh Internship",
     startDate: "May 2025",
     endDate: "Oct 2025",
     current: false,
@@ -20,7 +53,7 @@ export const experiences = [
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Saint_Louis_University_logo.svg/512px-Saint_Louis_University_logo.svg.png"
   },
   {
-    id: 2,
+    id: 4,
     company: "Michigan Mars Rover Team",
     position: "Embedded Software Engineer",
     location: "Ann Arbor, MI",
@@ -38,12 +71,11 @@ export const experiences = [
       "C++",
       "STM32CubeIDE",
       "CAN",
-      "I2C",
-      "PWM"],
+      "I2C",],
     logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Michigan_Wolverines_logo.svg"
   },
   {
-    id: 3,
+    id: 5,
     company: "Arch Grants",
     position: "Intern",
     location: "St. Louis, MO",
