@@ -52,7 +52,7 @@ const Hero = () => {
 
                 {/* Description */}
                 <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                  AI/ML • Embedded Systems • Full-Stack Development
+                Embedded Systems • AI/ML • Systems Software
                 </p>
 
 

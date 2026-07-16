@@ -132,15 +132,14 @@ export const organizations = [
 ];
 
 export const skills = {
-  web: [
-    "React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3",
-    "Tailwind CSS", "Node.js", "FastAPI"
+  systems: [
+    "Git", "CMake", "React", "Next.js", "TypeScript", "JavaScript", "Node.js", "FastAPI"
   ],
   ml: [
-    "Python", "PyTorch", "NumPy", "SciPy", "Keras", "TensorFlow", "Matplotlib","CUDA", "Pandas", "Conda"
+    "Python", "PyTorch", "NumPy", "TensorFlow", "Matplotlib","CUDA", "Pandas", "Conda", "Jupyter"
   ],
   embedded: [
-    "C/C++", "STM32 Microcontrollers", "STM32CubeIDE", "CAN/I2C", "PWM Control", "Motor Control"
+    "C/C++", "ROS 2", "CAN/I2C", "Motor Control", "Linux", "UART", "SocketCAN"
   ],
   soft: [
     "Leadership", "Problem Solving", "Communication", "Team Collaboration", "Adaptability", "Time Management"

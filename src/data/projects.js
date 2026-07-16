@@ -1,49 +1,146 @@
 export const projects = [
   {
     id: 1,
-    title: "LSTM-Based Portfolio Optimization",
-    description: "A deep learning project using LSTM neural networks to forecast stock returns and simulate portfolio strategies, leveraging open financial datasets for experimentation.",
-    longDescription: "This project investigates how Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) models can predict stock returns and aid portfolio optimization. Inspired by academic research, it adapts methods using open-access data—including Yahoo Finance, Kenneth French Data Library, and Kaggle financial metrics. The pipeline includes data gathering, feature engineering, model training with Keras/TensorFlow, custom loss functions for directional accuracy, and simulation of investment strategies. Results demonstrate that public data can achieve competitive predictive performance compared to private datasets, with detailed analysis of feature importance and model robustness.",
-    technologies: ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib", "Jupyter Notebook"],
-    category: "ML/AI",
-    status: "Live",
-    featured: false,
-    image: "lstm-proj.png",
-    demoUrl: null,
-    githubUrl: "https://github.com/cwoods05/Inspirit-LSTM-project",
-    highlights: [
-      "Replicated academic LSTM portfolio research with open datasets",
-      "Used Yahoo Finance, Kenneth French Data, and Kaggle metrics",
-      "Custom loss function for improved directional prediction",
-      "Portfolio simulations showed marginal index outperformance",
-      "Feature analysis revealed Fama-French factors as most influential",
-      "Training pipeline with robust preprocessing and GPU support"
+    title: "Cooperative RTOS-Style Microkernel",
+    description:
+      "Designed and implemented a cooperative RTOS-style microkernel simulator in C++17 to explore scheduling, synchronization, inter-task communication, and periodic execution. The project emphasizes readable systems design, deterministic execution, and automated testing.",
+    technologies: [
+      "C++",
+      "CMake",
+      "Concurrency",
+      "Scheduling",
+      "Mutexes",
+      "Message Queues"
     ],
-    year: '2023/24'
+    category: "Systems",
+    status: "Completed",
+    featured: true,
+    image: "microkernel.png",
+    demoUrl: null,
+    githubUrl: "https://github.com/cwoods05/microkernel",
+    highlights: [
+      "Implemented priority scheduling, mutexes, semaphores, and bounded message queues",
+      "Added periodic tasks, deadline tracking, and runtime task statistics",
+      "Built automated tests and a rover-inspired task pipeline demonstration"
+    ],
+    year: "2026"
   },
   {
     id: 2,
-    title: "Turbofan Engine Remaining Useful Life (RUL) Prediction",
-    description: "A machine learning pipeline for predicting the Remaining Useful Life (RUL) of turbofan engines using the NASA CMAPSS dataset, featuring feature engineering, baseline models, and visualization.",
-    longDescription: "This project implements a baseline machine learning pipeline for estimating the Remaining Useful Life (RUL) of turbofan engines, utilizing the NASA CMAPSS FD001 dataset. It automatically loads and processes engine sensor data, generating rolling mean and first-order difference features. The pipeline includes train/validation splits, Z-score normalization, and supports two baseline models: Ridge Regression and Random Forest Regressor. Evaluation metrics include Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and the NASA Scoring Function. The workflow outputs visualizations (scatter plots), prediction CSVs, and a summary of metrics. The results provide a foundation for further research into prognostics and predictive maintenance for industrial engines.",
-    technologies: ["Python", "scikit-learn", "NumPy", "Pandas", "Matplotlib"],
-    category: "ML/AI",
-    status: "Live",
+    title: "CAN Motor Control Firmware",
+    description:
+      "Developed low-level firmware and Linux tooling for CAN-based robotic motor control as part of the Atombot Research Team. My work focused on implementing the hardware abstraction layer, validating CAN communication, and improving firmware documentation and onboarding.",
+    technologies: [
+      "C",
+      "C++",
+      "Linux",
+      "CAN",
+      "SocketCAN",
+      "ODrive"
+    ],
+    category: "Embedded",
+    status: "Active",
     featured: true,
+    image: "atombot_leg.png",
+    demoUrl: null,
+    githubUrl: null,
+    highlights: [
+      "Implemented CAN HAL functions for initialization, communication, timing, and error handling",
+      "Developed motor-control testing utilities and validated ODrive CAN communication",
+      "Created firmware documentation, CAN protocol references, and onboarding guides"
+    ],
+    year: "2026–Present"
+  },
+  {
+    id: 3,
+    title: "Continuity",
+    description:
+      "Built and published a TypeScript CLI and local MCP server for managing persistent project context across AI-assisted coding sessions. The tool generates structured project briefs, maintains development history, and exposes repository context through a lightweight workflow.",
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "MCP",
+      "Vitest",
+      "Commander",
+      "npm"
+    ],
+    category: "Systems",
+    status: "Completed",
+    featured: false,
+    image: "continuity.png",
+    demoUrl: null,
+    githubUrl: "https://github.com/cwoods05/continuity",
+    highlights: [
+      "Published a multi-command CLI package to npm",
+      "Implemented project brief generation and persistent session logging",
+      "Added MCP integration, validation tools, and automated tests"
+    ],
+    year: "2026"
+  },
+  {
+    id: 4,
+    title: "ROS 2 Dynamixel Gimbal Control",
+    description:
+      "Contributed to the Michigan Mars Rover embedded software stack by developing ROS 2 hardware-control software for a DYNAMIXEL-powered mast gimbal. My work focused on hardware communication, servo control, telemetry publishing, and configurable motion limits.",
+    technologies: [
+      "C++",
+      "ROS 2",
+      "DYNAMIXEL SDK",
+      "Linux",
+      "UART"
+    ],
+    category: "Embedded",
+    status: "Completed",
+    featured: true,
+    image: "mrover.png",
+    demoUrl: null,
+    githubUrl: "https://github.com/umrover/mrover-ros2",
+    highlights: [
+      "Developed a ROS 2 hardware bridge for DYNAMIXEL servo communication",
+      "Implemented service-based position control and real-time telemetry publishing",
+      "Designed configurable soft limits, motion profiles, and servo parameter management"
+    ],
+    year: "2026"
+  },
+  {
+    id: 5,
+    title: "Turbofan Engine Remaining Useful Life (RUL) Prediction",
+    description:
+      "Built a machine learning pipeline for predicting turbofan engine Remaining Useful Life (RUL) using the NASA CMAPSS dataset. The project includes automated preprocessing, feature engineering, baseline regression models, and evaluation using industry-standard predictive maintenance metrics.",
+    technologies: ["Python", "scikit-learn", "NumPy", "Pandas", "Matplotlib"],
+    category: "AI/ML",
+    status: "Completed",
+    featured: false,
     image: "turbofan.jpg",
     demoUrl: null,
     githubUrl: "https://github.com/cwoods05/turbofan-rul-starter",
     highlights: [
-      "Implements RUL prediction using NASA CMAPSS FD001 dataset",
-      "Automatic data loading and preprocessing pipeline",
-      "Rolling mean and first-order difference feature engineering",
-      "Baseline models: Ridge Regression and Random Forest Regressor",
-      "Evaluation metrics include MAE, RMSE, and NASA scoring",
-      "Visualizations and outputs for validation predictions and metrics"
+      "Engineered rolling statistical features from NASA CMAPSS sensor data",
+      "Compared Ridge Regression and Random Forest baseline models",
+      "Evaluated predictions using MAE, RMSE, and the NASA scoring function"
     ],
     year: 2025
   },
   {
+    id: 6,
+    title: 'LSTM Stock Return Prediction',
+    description:
+      'An independent research project evaluating whether an LSTM trained with public financial data could reproduce methods developed using proprietary datasets.',
+    technologies: ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib", "Jupyter Notebook"],
+    category: 'AI/ML',
+    status: 'Completed',
+    featured: false,
+    image: 'lstm-proj.png',
+    demoUrl: 'https://github.com/cwoods05/Inspirit-LSTM-project/blob/main/Stock_Return_Prediction_and_Portfolio_Optimization_Using_LSTM.pdf',
+    githubUrl: 'https://github.com/cwoods05/Inspirit-LSTM-project',
+    highlights: [
+      'Combined Yahoo Finance, Fama-French, and public company financial data',
+      'Evaluated 33-day return forecasts and multiple portfolio simulations',
+      'Documented overfitting, feature importance, and limitations in a research paper'
+    ],
+    year: '2023–2024'
+  },
+  /*{
     id: 3,
     title: "ROOKI",
     description: "A platform for hockey fans to share their thoughts in groups, comment on games, and make lock picks on game outcomes.",
@@ -63,13 +160,13 @@ export const projects = [
       "Live deployment at rookiapp.com"
     ],
     year: '2025/26'
-  }
+  }*/
 ];
 
 export const projectCategories = [
   "All",
-  "Full Stack",
-  "ML/AI",
   "Embedded",
+  "AI/ML",
+  "Systems",
 ];
 

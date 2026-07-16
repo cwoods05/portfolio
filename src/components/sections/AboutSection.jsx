@@ -40,12 +40,11 @@ const AboutSection = () => {
           <div className="prose prose-lg prose-invert mx-auto">
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
               Hi, I&apos;m Connor, a <span className="text-gradient font-semibold">Computer Engineering Student</span> at 
-              the University of Michigan with interests in machine learning, embedded systems, and web development.
+              the University of Michigan with interests in embedded systems, machine learning, and software.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              This past summer, I conducted research in computational biology, integrating graph neural networks 
-              into GraphRNA — a PyTorch-based model for predicting RNA 3D structures — and optimizing training 
-              pipelines on high-performance GPU clusters.
+              My recent work includes software engineering at Lantern AI in Hong Kong, CAN-based motor-control work with 
+              the Atombot Research Team, and embedded development for Michigan Mars Rover.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
               Outside of school, I enjoy playing soccer, cooking, and spending time with friends. I also love to travel,
@@ -53,8 +52,7 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-
-        {/* Features Grid */}
+        {/* Features Grid
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {features.map((feature) => (
             <div
@@ -73,7 +71,7 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
-
+        */}
         {/* Skills Section */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-8">
@@ -81,6 +79,20 @@ const AboutSection = () => {
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Embedded */}
+            <div>
+              <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
+                Embedded
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {skills.embedded.map((skill) => (
+                  <TechBadge key={skill} variant="success">
+                    {skill}
+                  </TechBadge>
+                ))}
+              </div>
+            </div>
+            
             {/* ML/AI */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
@@ -95,27 +107,13 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Embedded */}
+            {/* Systems Software */}
             <div>
               <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
-                Embedded
+                Systems Software
               </h4>
               <div className="flex flex-wrap gap-2">
-                {skills.embedded.map((skill) => (
-                  <TechBadge key={skill} variant="success">
-                    {skill}
-                  </TechBadge>
-                ))}
-              </div>
-            </div>
-
-            {/* Web Development */}
-            <div>
-              <h4 className="text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">
-                Web Development
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {skills.web.map((skill) => (
+                {skills.systems.map((skill) => (
                   <TechBadge key={skill} variant="primary">
                     {skill}
                   </TechBadge>
@@ -139,13 +137,14 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Organizations Marquee */}
+        {/* Organizations Marquee 
         <div>
           <h3 className="text-2xl font-bold text-center mb-8">
             <span className="text-gradient">Technologies & Tools I Use</span>
           </h3>
           <ScrollingMarquee items={organizations} speed="normal" />
         </div>
+        */}
       </div>
     </section>
   );

@@ -16,52 +16,59 @@ const commands = {
   },
   about: {
     description: 'About me',
-    output: `Hi, I'm Connor, a Computer Engineering Student at the University of Michigan with interests in machine learning, embedded systems, and web development.
-
-This past summer, I conducted research in computational biology, integrating graph neural networks into GraphRNA — a PyTorch-based model for predicting RNA 3D structures — and optimizing training pipelines on high-performance GPU clusters.
-
-Outside of school, I enjoy playing soccer, cooking, and spending time with friends. I also love to travel, and am always looking for new adventures.
-
-Type 'skills' to see my technical expertise.`
+    output: `Hi, I'm Connor, a Computer Engineering student at the University of Michigan interested in embedded systems, AI/ML, and systems software.
+  
+  I'm currently a software engineer on the Michigan Mars Rover and Atombot Research teams, where I develop robotics software, embedded firmware, and low-level hardware interfaces. Outside of team projects, I enjoy building operating systems, developer tools, and machine learning applications.
+  
+  Outside of engineering, I enjoy playing soccer, cooking, traveling, and exploring new places.
+  
+  Type 'skills' to see my technical expertise.`
   },
   skills: {
     description: 'Technical skills',
     output: `Technical Skills:
-
-ML & Research:
-  Python, PyTorch, NumPy, SciPy, Keras, TensorFlow, Matplotlib, 
-  CUDA, Pandas, Conda
-
-Embedded:
-  C/C++, STM32 Microcontrollers, STM32CubeIDE, CAN/I2C, PWM Control, 
-  Motor Control
-
-Web Development:
-  React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, 
-  Node.js, FastAPI
-
-Soft Skills:
-  Leadership, Problem Solving, Communication, Team Collaboration, 
-  Adaptability, Time Management`
+  
+  Embedded Systems:
+    C, C++, ROS 2, Linux, CAN, UART, DYNAMIXEL SDK
+  
+  AI / Machine Learning:
+    Python, PyTorch, TensorFlow, Keras, NumPy,
+    Pandas, CUDA, Jupyter
+  
+  Software & Systems:
+    TypeScript, React, Node.js, FastAPI,
+    Git, CMake
+  
+  Soft Skills:
+    Leadership, Problem Solving, Communication, Team Collaboration, 
+    Adaptability, Time Management`
   },
   projects: {
     description: 'Featured projects',
     output: `Featured Projects:
-
-1. LSTM-Based Portfolio Optimization (2024)
-   A deep learning project using LSTM neural networks to forecast stock 
-   returns and simulate portfolio strategies using open financial 
-   datasets.
-   Tech: Python, PyTorch, NumPy, Pandas, Matplotlib, Jupyter Notebook
-   GitHub: github.com/cwoods05/Inspirit-LSTM-project
-
-2. Turbofan Engine RUL Prediction (2025)
-   Machine learning pipeline for predicting Remaining Useful Life of 
-   turbofan engines using NASA CMAPSS dataset.
-   Tech: Python, scikit-learn, NumPy, Pandas, Matplotlib
-   GitHub: github.com/cwoods05/turbofan-rul-starter
-
-Visit the projects section to learn more!`
+  
+  1. Cooperative RTOS-Style Microkernel (2026)
+     Cooperative task scheduler featuring synchronization primitives,
+     periodic execution, runtime statistics, and automated testing.
+     Tech: C++, CMake
+     GitHub: github.com/cwoods05/microkernel
+  
+  2. ROS 2 Dynamixel Gimbal Control (2026)
+     Contributed embedded software for the Michigan Mars Rover,
+     implementing hardware communication, telemetry, and servo control.
+     Tech: C++, ROS 2, DYNAMIXEL SDK, Linux
+  
+  3. CAN Motor Control Firmware (2026)
+     Developed CAN firmware components and motor validation tools for
+     the Atombot Research Team.
+     Tech: C, C++, Linux, CAN
+  
+  4. LSTM-Based Portfolio Optimization (2024)
+     Predicted stock returns using LSTM neural networks trained on
+     publicly available financial data.
+     Tech: Python, PyTorch, NumPy, Pandas
+  
+  Type 'github' to view all projects.`
   },
   experience: {
     description: 'Work experience',
