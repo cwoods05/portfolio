@@ -1,18 +1,26 @@
 export const experiences = [
   {
     id: 1,
-    company: "Lantern AI",
-    position: "Embedded Firmware Engineer",
+    company: "Lantern AI (YC F26)",
+    position: "Software Engineer Intern",
     location: "Hong Kong SAR",
     type: "Internship",
     startDate: "May 2026",
-    endDate: "July 2026",
+    endDate: "Present",
     current: true,
-    description: "",
+    description: "Built Lantern Ario end-to-end as primary engineer, developing an AI meeting assistant for recording, transcription, structured notes, and searchable meeting knowledge.",
     responsibilities: [
-      
+      "Connected recording, calendar, transcription, and AI services through external APIs, handling authentication and service-specific data formats while coordinating calendar events, bot scheduling, and meeting metadata across platforms.",
+      "Architected asynchronous meeting processing around webhooks and persistent jobs, tracking recordings through transcription and AI generation while preserving state and enabling recovery from interrupted or failed processing.",
+      "Prepared Ario for prospective customer use and supported product demonstration with Crypto.com; currently integrating meeting intelligence into Lantern’s hiring platform for interview capture and candidate review."
     ],
-    technologies: [],
+    technologies: ["TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "Supabase",
+    "REST APIs"],
     logo: ""
   },
   {
@@ -26,14 +34,39 @@ export const experiences = [
     current: true,
     description: "Researching wheel-legged robotics and developing firmware for the Helium subteam.",
     responsibilities: [
-      "Engineer interface functions to construct, transmit, and parse custom CAN frames for robotic motor control, including command messages, state queries, and fault-code retrieval",
-      "Bench-test and validate CAN communication with MIT ODrive motor controllers, debug message IDs, payload structure, and bus timing to reliably actuate brushless motors"
+      "Completed CAN receive and interface management functions allowing programs to issue commands, inspect controller responses, and recover cleanly between tests.",
+      "Engineered interface functions to construct, transmit, and parse custom CAN frames for robotic motor control, including command messages, state queries, and fault-code retrieval while mapping commands to required message IDs.",
+      "Bench-tested and validated CAN communication with MIT ODrive motor controllers, building controlled-rotation tests and tracing message, timing, and bus-state failures until commanded torque produced consistent motor motion."
     ],
     technologies: ["C", "C++", "CAN", "ODrive"],
     logo: ""
   },
   {
     id: 3,
+    company: "Michigan Mars Rover Team",
+    position: "Embedded Software Engineer",
+    location: "Ann Arbor, MI",
+    type: "Project Team",
+    startDate: "Aug 2025",
+    endDate: "present",
+    current: true,
+    description: "Developing and testing embedded control software for autonomous rover systems.",
+    responsibilities: [
+      "Redesigned rover’s motor control system to enable direct communication between NVIDIA Jetson and Dynamixel servos for lower latency, simplified subsystem integration, and more responsive servo actuation.",
+    "Developed UART-based C++ wrapper around Dynamixel SDK to support direct motor control from Jetson and bridge to existing ROS 2 control nodes and interfaces, including servo configuration and state feedback.",
+    "Reworked mast gimbal hardware bridge to provide real-time position, velocity, and current telemetry, achieving <0.1° positioning accuracy for reliable camera operation through PID tuning and protocol debugging."
+    ],
+    technologies: ["C++",
+    "ROS 2",
+    "Dynamixel SDK",
+    "UART",
+    "NVIDIA Jetson",
+    "PID Control",
+    "Linux"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Michigan_Wolverines_logo.svg"
+  },
+  {
+    id: 4,
     company: "St. Louis University Dept. of Computer Science - Jie Hou Lab",
     position: "Machine Learning Researcher",
     location: "St. Louis, MO",
@@ -51,28 +84,6 @@ export const experiences = [
     ],
     technologies: ["Python", "PyTorch", "CUDA", "WandB", "NumPy", "Pandas", "Conda"],
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Saint_Louis_University_logo.svg/512px-Saint_Louis_University_logo.svg.png"
-  },
-  {
-    id: 4,
-    company: "Michigan Mars Rover Team",
-    position: "Embedded Software Engineer",
-    location: "Ann Arbor, MI",
-    type: "Project Team",
-    startDate: "Aug 2025",
-    endDate: "present",
-    current: true,
-    description: "Developing and testing embedded control software for autonomous rover systems.",
-    responsibilities: [
-      "Program STM32 microcontrollers in C/C++ to generate PWM signals for motor control.",
-      "Implement and debugged CAN and I²C communication protocols for subsystem integration.",
-      "Develop UART-based C++ wrapper around Dynamixel SDK to support direct motor control."
-    ],
-    technologies: ["C",
-      "C++",
-      "STM32CubeIDE",
-      "CAN",
-      "I2C",],
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Michigan_Wolverines_logo.svg"
   },
   {
     id: 5,

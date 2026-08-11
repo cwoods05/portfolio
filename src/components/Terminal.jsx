@@ -1,6 +1,25 @@
 import { useState, useEffect, useRef } from 'react';
 import { Terminal as TerminalIcon, X, Minimize2, Maximize2 } from 'lucide-react';
 import { clsx } from 'clsx';
+import { skills, experiences } from '../data/experience';
+
+const formatSkillList = (items) => items.join(', ');
+
+const formatExperienceOutput = () => {
+  const entries = experiences
+    .map(
+      (exp) =>
+        `• ${exp.position} @ ${exp.company} (${exp.startDate} - ${exp.endDate})
+  ${exp.description}`
+    )
+    .join('\n\n');
+
+  return `Work Experience:
+
+${entries}
+
+Check the experience section for detailed information!`;
+};
 
 const commands = {
   help: {
@@ -16,11 +35,11 @@ const commands = {
   },
   about: {
     description: 'About me',
-    output: `Hi, I'm Connor, a Computer Engineering student at the University of Michigan interested in embedded systems, AI/ML, and systems software.
+    output: `Hi, I'm Connor, a Computer Engineering student at the University of Michigan with interests in embedded systems, machine learning, and software.
   
-  I'm currently a software engineer on the Michigan Mars Rover and Atombot Research teams, where I develop robotics software, embedded firmware, and low-level hardware interfaces. Outside of team projects, I enjoy building operating systems, developer tools, and machine learning applications.
+  My recent work includes software engineering at Lantern AI in Hong Kong, CAN-based motor-control work with the Atombot Research Team, and embedded development for Michigan Mars Rover.
   
-  Outside of engineering, I enjoy playing soccer, cooking, traveling, and exploring new places.
+  Outside of school, I enjoy playing soccer, cooking, and spending time with friends. I also love to travel, and am always looking for new adventures.
   
   Type 'skills' to see my technical expertise.`
   },
@@ -28,21 +47,19 @@ const commands = {
     description: 'Technical skills',
     output: `Technical Skills:
   
-  Embedded Systems:
-    C, C++, ROS 2, Linux, CAN, UART, DYNAMIXEL SDK
+  Embedded:
+    ${formatSkillList(skills.embedded)}
   
-  AI / Machine Learning:
-    Python, PyTorch, TensorFlow, Keras, NumPy,
-    Pandas, CUDA, Jupyter
+  ML & Research:
+    ${formatSkillList(skills.ml)}
   
-  Software & Systems:
-    TypeScript, React, Node.js, FastAPI,
-    Git, CMake
+  Systems Software:
+    ${formatSkillList(skills.systems)}
   
   Soft Skills:
-    Leadership, Problem Solving, Communication, Team Collaboration, 
-    Adaptability, Time Management`
+    ${formatSkillList(skills.soft)}`
   },
+
   projects: {
     description: 'Featured projects',
     output: `Featured Projects:
@@ -72,24 +89,7 @@ const commands = {
   },
   experience: {
     description: 'Work experience',
-    output: `Work Experience:
-
-• Machine Learning Researcher @ St. Louis University (May 2025 - Present)
-  Conducting deep learning research on RNA 3D structure prediction using 
-  graph neural networks. Integrated code into GraphRNA and optimized 
-  training on high-performance GPU clusters.
-
-• Embedded Software Engineer @ Michigan Mars Rover Team (Aug 2025 - Present)
-  Developing embedded control software for autonomous rover systems. 
-  Programming STM32 microcontrollers for motor control and implementing 
-  CAN/I2C communication protocols.
-
-• Intern @ Arch Grants (April 2024 - May 2024)
-  Supported startup accelerator by evaluating early-stage companies and 
-  conducting market research. Analyzed 200+ potential judges and mapped 
-  30+ startups in the St. Louis ecosystem.
-
-Check the experience section for detailed information!`
+    output: formatExperienceOutput()
   },
   contact: {
     description: 'Contact information',
